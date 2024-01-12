@@ -97,7 +97,7 @@ const getWolfAlphaSevenPrice = (req: Request, res: Response) => {
 }
 
 const getWolfAlphaEightPrice = (req: Request, res: Response) => {
-    // Fetch data related to Wolf Game Alpha Seven floor price
+    // Fetch data related to Wolf Game Alpha Eight floor price
     axios.get(API_URL + '/traits/collection/' + process.env.WOLF_GAME_SHEEP_WOLF_COLLECTION_ID + 
              '/floor?trait_type=Alpha%20Score&value=8', options)
     .then(response => {
@@ -112,14 +112,82 @@ const getWolfAlphaEightPrice = (req: Request, res: Response) => {
     });
 }
 
+const getSheepGenTwoFloorPrice = (req: Request, res: Response) => {
+    // Fetch data related to Wolf Game Sheep Gen 2 floor price
+    axios.get(API_URL + '/traits/collection/' + process.env.WOLF_GAME_GEN_TWO_COLLECTION_ID + 
+             '/floor?trait_type=Type&value=Sheep', options)
+    .then(response => {
+        res.status(200).json({
+            price: response.data.floor_price.value
+        });
+    })
+    .catch(err => {
+        res.status(400).json({
+            message: "Could not fetch Sheep Gen 2 floor price data " + err
+        });
+    });
+}
+
+const getWolfAlphaFiveGenTwoPrice = (req: Request, res: Response) => {
+    // Fetch data related to Wolf Game Alpha Five Gen 2 floor price
+    axios.get(API_URL + '/traits/collection/' + process.env.WOLF_GAME_GEN_TWO_COLLECTION_ID + 
+             '/floor?trait_type=Alpha%20Score&value=5', options)
+    .then(response => {
+        res.status(200).json({
+            price: response.data.floor_price.value
+        });
+    })
+    .catch(err => {
+        res.status(400).json({
+            message: "Could not fetch Alpha 5 Gen 2 Wolf floor price data " + err
+        });
+    });
+}
+
+const getWolfAlphaSixGenTwoPrice = (req: Request, res: Response) => {
+    // Fetch data related to Wolf Game Alpha Six Gen 2 floor price
+    axios.get(API_URL + '/traits/collection/' + process.env.WOLF_GAME_GEN_TWO_COLLECTION_ID + 
+             '/floor?trait_type=Alpha%20Score&value=6', options)
+    .then(response => {
+        res.status(200).json({
+            price: response.data.floor_price.value
+        });
+    })
+    .catch(err => {
+        res.status(400).json({
+            message: "Could not fetch Alpha 6 Gen 2 Wolf floor price data " + err
+        });
+    });
+}
+
+const getWolfAlphaSevenGenTwoPrice = (req: Request, res: Response) => {
+    // Fetch data related to Wolf Game Alpha Seven Gen 2 floor price
+    axios.get(API_URL + '/traits/collection/' + process.env.WOLF_GAME_GEN_TWO_COLLECTION_ID + 
+             '/floor?trait_type=Alpha%20Score&value=7', options)
+    .then(response => {
+        res.status(200).json({
+            price: response.data.floor_price.value
+        });
+    })
+    .catch(err => {
+        res.status(400).json({
+            message: "Could not fetch Alpha 7 Gen 2 Wolf floor price data " + err
+        });
+    });
+}
+
 // Mapping functions to be used
 const gameAssetPrices = {
     getSheepAssetFloorPrice,
+    getSheepGenTwoFloorPrice,
     getWolfAssetFloorPrice,
     getWolfAlphaFivePrice,
     getWolfAlphaSixPrice,
     getWolfAlphaSevenPrice,
-    getWolfAlphaEightPrice
+    getWolfAlphaEightPrice,
+    getWolfAlphaFiveGenTwoPrice,
+    getWolfAlphaSixGenTwoPrice,
+    getWolfAlphaSevenGenTwoPrice
 }
 
 export default gameAssetPrices;
