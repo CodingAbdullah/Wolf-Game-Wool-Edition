@@ -1,16 +1,37 @@
 import { Request, Response } from 'express';
 
-const getSheepAssetPrice = (req: Request, res: Response) => {
+const getSheepAssetFloorPrice = (req: Request, res: Response) => {
     // Code to go here..
 }
 
-const getWolfAssetPrice = (req: Request, res: Response) => {
+const getWolfAssetFloorPrice = (req: Request, res: Response) => {
     // Code to go here..
 }
 
-const gameAssets = {
-    getSheepAssetPrice,
-    getWolfAssetPrice
+const getWolfAlphaFivePrice = (req: Request, res: Response) => {
+    // Code to go here..
 }
 
-export default gameAssets;
+const getWolfAlphaSixPrice = (req: Request, res: Response) => {
+    // Code to go here..
+}
+
+const getWolfAlphaSevenPrice = (req: Request, res: Response) => {
+    // Code to go here..
+}
+
+const getWolfAlphaEightPrice = (req: Request, res: Response) => {
+    // Code to go here..
+}
+
+// Mapping functions to be used
+const gameAssetPrices = {
+    getSheepAssetFloorPrice,
+    getWolfAssetFloorPrice,
+    getWolfAlphaFivePrice,
+    getWolfAlphaSixPrice,
+    getWolfAlphaSevenPrice,
+    getWolfAlphaEightPrice
+}
+
+export default gameAssetPrices;
