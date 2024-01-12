@@ -1,0 +1,23 @@
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'broken console';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.neat-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.neat-list li {
+    padding: 10px;
+}
+
+/* Optional: Style hover effect on list items */
+.neat-list li:hover {
+    background-color: #f0f0f0;
+}
