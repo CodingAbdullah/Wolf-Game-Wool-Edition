@@ -50,14 +50,19 @@ const LinksPage: FC = () => {
                     </li>
                     <li>Feral Flips - <i><a target="_blank" href="https://www.feralflips.com/">In-Game Resource Tool</a></i></li>
                 </ul>
+                <h5 style={{ marginTop: '3rem' }}>API Docs</h5>
+                <hr />
+                <ul className="neat-list">
+                    <li><i><a target="_blank" href="https://wolf.game/documentation.html">Wolf Game API Docs</a></i></li>
+                </ul>
                 <h5 style={{ marginTop: '3rem' }}>Socials</h5>
                 <hr />
                 <ul className="neat-list">
-                    <li><i><a href="https://twitter.com/wolfdotgame">Twitter</a></i></li>
+                    <li><i><a target="_blank" href="https://twitter.com/wolfdotgame">Twitter</a></i></li>
                     <li><i><a target="_blank" href="https://discord.com/invite/wolfgame">Discord</a></i></li>
                 </ul>
             </div>
-            <button style={{ marginTop: '1rem', fontFamily: 'broken console' }} onClick={ () => navigate("/") }className='btn btn-success'><u>Go Back</u></button>
+            <button style={{ marginTop: '2rem', fontFamily: 'broken console' }} onClick={ () => navigate("/") }className='btn btn-success'><u>Go Back</u></button>
         </div>
     )
 }
