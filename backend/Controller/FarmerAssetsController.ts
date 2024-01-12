@@ -28,7 +28,7 @@ const getFarmerFloorPrice = (req: Request, res: Response) => {
     })
     .catch(err => {
         res.status(400).json({
-            message: "Could not fetch farmer floor price data " + err
+            message: "Could not fetch  farmer floor price data " + err
         });
     });
 }
@@ -45,7 +45,7 @@ const getFarmerHundoPrice = (req: Request, res: Response) => {
     })
     .catch(err => {
         res.status(400).json({
-            message: "Could not fetch farmer floor price data " + err
+            message: "Could not fetch Average Hundo farmer floor price data " + err
         });
     });    
 }
@@ -62,7 +62,7 @@ const getFarmerAverageJoePrice = (req: Request, res: Response) => {
     })
     .catch(err => {
         res.status(400).json({
-            message: "Could not fetch farmer floor price data " + err
+            message: "Could not fetch Average Joe farmer floor price data " + err
         });
     });
 }
@@ -79,7 +79,7 @@ const getFarmerAboveAverageJanePrice = (req: Request, res: Response) => {
     })
     .catch(err => {
         res.status(400).json({
-            message: "Could not fetch farmer floor price data " + err
+            message: "Could not fetch Above Average Jane farmer floor price data " + err
         });
     });
 }
@@ -96,7 +96,7 @@ const getFarmerDieselPrice = (req: Request, res: Response) => {
     })
     .catch(err => {
         res.status(400).json({
-            message: "Could not fetch farmer floor price data " + err
+            message: "Could not fetch Diesel farmer floor price data " + err
         });
     });
 }
@@ -113,7 +113,7 @@ const getFarmerBigMamaPrice = (req: Request, res: Response) => {
     })
     .catch(err => {
         res.status(400).json({
-            message: "Could not fetch farmer floor price data " + err
+            message: "Could not fetch Big Mama farmer floor price data " + err
         });
     });
 }
@@ -130,7 +130,7 @@ const getFarmerBigDaddyPrice = (req: Request, res: Response) => {
     })
     .catch(err => {
         res.status(400).json({
-            message: "Could not fetch farmer floor price data " + err
+            message: "Could not fetch Big Daddy farmer floor price data " + err
         });
     });
 }
