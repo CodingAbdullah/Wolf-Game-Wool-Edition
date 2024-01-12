@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": "./complied",
+    "rootDir": "./",
+    "strict": true,
+    "esModuleInterop": true  // Add or update this line
+  }
+}

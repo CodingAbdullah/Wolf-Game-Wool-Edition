@@ -1,0 +1,4 @@
+# Due to size, node_modules will not be committed
+# .env file to remain anonymous
+node_modules
+.env
