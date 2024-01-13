@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Fetch Wolf Game Land floor price
 export const wolfGameLandFloorPrice = async () => {
-    const response = await axios.get('https://localhost:5000/wolf-game-land-floor-price');
+    const response = await axios.get('http://localhost:5000/wolf-game-land-floor-price');
 
     if (response.status === 200){
         return response.data;
@@ -14,7 +14,7 @@ export const wolfGameLandFloorPrice = async () => {
 
 // Fetch Wolf Game Land Structure floor prices
 export const wolfGameLandStructureFloorPrice = async () => {
-    const response = await axios.get('https://localhost:5000/wolf-game-land-structure-floor-price');
+    const response = await axios.get('http://localhost:5000/wolf-game-land-structure-floor-price');
 
     if (response.status === 200){
         return response.data;
@@ -26,7 +26,7 @@ export const wolfGameLandStructureFloorPrice = async () => {
 
 // Fetch Wolf Game Land Peak Level 1 floor price
 export const wolfGameLandPeakLevel1Price = async () => {
-    const response = await axios.get('https://localhost:5000/wolf-game-land-czero-level-one-price');
+    const response = await axios.get('http://localhost:5000/wolf-game-land-czero-level-one-price');
 
     if (response.status === 200){
         return response.data;
@@ -38,7 +38,7 @@ export const wolfGameLandPeakLevel1Price = async () => {
 
 // Fetch Wolf Game Land Peak Level 2 floor price
 export const wolfGameLandPeakLevel2Price = async () => {
-    const response = await axios.get('https://localhost:5000/wolf-game-land-czero-level-two-price');
+    const response = await axios.get('http://localhost:5000/wolf-game-land-czero-level-two-price');
 
     if (response.status === 200){
         return response.data;
@@ -50,7 +50,7 @@ export const wolfGameLandPeakLevel2Price = async () => {
 
 // Fetch Wolf Game Land Peak Level 3 floor price
 export const wolfGameLandPeakLevel3Price = async () => {
-    const response = await axios.get('https://localhost:5000/wolf-game-land-czero-level-three-price');
+    const response = await axios.get('http://localhost:5000/wolf-game-land-czero-level-three-price');
 
     if (response.status === 200){
         return response.data;
