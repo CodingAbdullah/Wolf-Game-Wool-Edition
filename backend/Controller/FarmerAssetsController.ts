@@ -44,6 +44,27 @@ const getFarmerHundoPrice = (req: Request, res: Response) => {
     });    
 }
 
+const getFarmerTheKidPrice = (req: Request, res: Response) => {
+
+    // Fetch data related to farmer floor price
+    axios.get(API_URL + '/traits/collection/' + process.env.WOLF_GAME_FARMER_COLLECTION_ID + 
+             '/floor?trait_type=Type&value=The%20Kid', {
+                headers: {
+                    'X-API-KEY': process.env.SIMPLE_HASH_API_KEY
+                }
+             })
+    .then(response => {
+        res.status(200).json({
+            price: response.data.floor_price.value
+        });
+    })
+    .catch(err => {
+        res.status(400).json({
+            message: "Could not fetch Average Hundo farmer floor price data " + err
+        });
+    });    
+}
+
 const getFarmerAverageJoePrice = (req: Request, res: Response) => {
     
     // Fetch data related to farmer floor price
@@ -152,6 +173,7 @@ const getFarmerBigDaddyPrice = (req: Request, res: Response) => {
 // Mapping functions to be used
 const farmerAssetPrices = {
     getFarmerFloorPrice,
+    getFarmerTheKidPrice,
     getFarmerAboveAverageJanePrice,
     getFarmerAverageJoePrice,
     getFarmerBigDaddyPrice,

@@ -83,3 +83,15 @@ export const wolfGameFarmerAverageJoePrice = async () => {
         throw new Error("Could not fetch Wolf Game Farmer data");
     }
 }
+
+// Fetch The Kid floor price
+export const wolfGameFarmerTheKidPrice = async () => {
+    const response = await axios.get('http://localhost:5000/wolf-game-farmer-the-kid-price');
+
+    if (response.status === 200){
+        return response.data;
+    }
+    else {
+        throw new Error("Could not fetch Wolf Game Farmer data");
+    }
+}

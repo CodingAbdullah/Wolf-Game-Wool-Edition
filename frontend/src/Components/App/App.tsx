@@ -10,6 +10,7 @@ import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import '../WoolTokenPriceLabel/WoolTokenPriceLabel';
 import '../HomePage/HomePage.css';
+import '../FarmerPricePage/FarmerPricePage.css';
 import '../Footer/Footer.css';
 import '../Navbar/Navbar.css';
 import '../LinksPage/Links.css';

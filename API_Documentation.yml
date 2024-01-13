@@ -70,12 +70,38 @@ paths:
                   $ref: '#/components/schemas/Wolfgame'
         '400':
           description: Bad Request
+  /wolf-game-farmer-the-kid-price:
+    get:
+      tags:
+        - Wolf Game Farmers
+      summary: Fetches Wolf Game The Kid floor price
+      operationId: getWolfGameFarmerTheKidPrice
+      description: |
+        By passing in the appropriate parameters, you can lookup the asset floor price
+      parameters:
+        - in: header
+          name: X-API-KEY
+          description: Must pass in token as a header for making authenticated calls
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Asset floor price displayed
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Wolfgame'
+        '400':
+          description: Bad Request
   /wolf-game-farmer-above-average-jane-price:
     get:
       tags:
         - Wolf Game Farmers
       summary: Fetches Wolf Game Above Average Jane floor price
-      operationId: getWolfGameAboveAverageJanePrice
+      operationId: getWolfGameFarmerAboveAverageJanePrice
       description: |
         By passing in the appropriate parameters, you can lookup the asset floor price
       parameters:
@@ -101,7 +127,7 @@ paths:
       tags:
         - Wolf Game Farmers
       summary: Fetches Wolf Game Hundo floor price
-      operationId: getWolfGameHundoPrice
+      operationId: getWolfGameFarmerHundoPrice
       description: |
         By passing in the appropriate parameters, you can lookup the asset floor price
       parameters:
@@ -127,7 +153,7 @@ paths:
       tags:
         - Wolf Game Farmers
       summary: Fetches Wolf Game Diesel floor price
-      operationId: getWolfGameDieselPrice
+      operationId: getWolfGameFarmerDieselPrice
       description: |
         By passing in the appropriate parameters, you can lookup the asset floor price
       parameters:
@@ -153,7 +179,7 @@ paths:
       tags:
         - Wolf Game Farmers
       summary: Fetches Wolf Game Big Mama price
-      operationId: getWolfGameBigMamaPrice
+      operationId: getWolfGameFarmerBigMamaPrice
       description: |
         By passing in the appropriate parameters, you can lookup the asset floor price
       parameters:
@@ -179,7 +205,7 @@ paths:
       tags:
         - Wolf Game Farmers
       summary: Fetches Wolf Game Big Daddy price
-      operationId: getWolfGameBigDaddyPrice
+      operationId: getWolfGameFarmerBigDaddyPrice
       description: |
         By passing in the appropriate parameters, you can lookup the asset floor price
       parameters:
