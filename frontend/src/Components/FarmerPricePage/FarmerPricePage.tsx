@@ -51,19 +51,21 @@ const FarmerPricePage: FC = () => {
         farmerAverageJoePriceQuery.isPending || farmerBigDaddyPriceQuery.isPending || 
         farmerBigMamaPriceQuery.isPending || farmerDieselPriceQuery.isPending || 
         farmerHundoPriceQuery.isPending){
-            <div>Loading data..</div>
+            return (
+                <div>Loading data..</div>
+            )
     }
-    else if (farmerFloorPriceQuery.isSuccess || 
-            farmerAboveAverageJanePriceQuery.isSuccess || 
-            farmerAverageJoePriceQuery.isSuccess || 
-            farmerBigDaddyPriceQuery.isSuccess || 
-            farmerBigMamaPriceQuery.isSuccess || 
-            farmerDieselPriceQuery.isSuccess || 
+    else if (farmerFloorPriceQuery.isSuccess && 
+            farmerAboveAverageJanePriceQuery.isSuccess && 
+            farmerAverageJoePriceQuery.isSuccess &&
+            farmerBigDaddyPriceQuery.isSuccess &&
+            farmerBigMamaPriceQuery.isSuccess &&
+            farmerDieselPriceQuery.isSuccess &&
             farmerHundoPriceQuery.isSuccess) {
                 return (
                     <div className='farmer-price-page'>
-                        <FloorPriceLabel heading={["Wolf Game Farmer Prices"]} price={[0]} />
-                        <table className="table table-bordered">
+                        <FloorPriceLabel heading={["Wolf Game Farmer Prices"]} price={[farmerAverageJoePriceQuery.data.price]} />
+                        <table style={{ marginLeft: 'auto', marginRight: 'auto', width: '50%' }} className="table table-bordered table-hover">
                             <thead>
                                 <tr>
                                     <th scope="col">Farmer Assets</th>
@@ -73,27 +75,27 @@ const FarmerPricePage: FC = () => {
                             <tbody>
                                 <tr>
                                     <th scope="row">Average Joe</th>
-                                    <td>{ farmerAverageJoePriceQuery.data.price }</td>
+                                    <td>{ Number(farmerAverageJoePriceQuery.data.price)/1000000000000000000 + " ETH" }</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">Above Average Jane</th>
-                                    <td>{ farmerAboveAverageJanePriceQuery.data.price }</td>
+                                    <td>{ Number(farmerAboveAverageJanePriceQuery.data.price)/1000000000000000000 + " ETH" }</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">Diesel</th>
-                                    <td>{ farmerDieselPriceQuery.data.price }</td>
+                                    <td>{ Number(farmerDieselPriceQuery.data.price)/1000000000000000000 + " ETH" }</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">Hundo</th>
-                                    <td>{ farmerHundoPriceQuery.data.price }</td>
+                                    <td>{ Number(farmerHundoPriceQuery.data.price)/1000000000000000000 + " ETH"}</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">Big Mama</th>
-                                    <td>{ farmerBigMamaPriceQuery.data.price }</td>
+                                    <td>{ Number(farmerBigMamaPriceQuery.data.price)/1000000000000000000 + " ETH" }</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">Big Daddy</th>
-                                    <td>{ farmerBigDaddyPriceQuery.data.price }</td>
+                                    <td>{ Number(farmerBigDaddyPriceQuery.data.price)/1000000000000000000 + " ETH" }</td>
                                 </tr>
                             </tbody>
                         </table>
