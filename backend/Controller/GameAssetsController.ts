@@ -1,25 +1,15 @@
 import { Request, Response } from 'express';
 import axios from 'axios';
 import { SIMPLEHASH_URL as API_URL } from '../util/simpleHashAPIURLEndpoint';
-import * as dotenv from 'dotenv';
-
-// Set configuration to path where the .env file resides in development environment
-dotenv.config({ path: '../.env '});
-
-// Set options for API request
-const options = {
-    method: 'GET',
-    headers: {
-        'accept' : 'application/json',
-        'content-type': 'application/json',
-        'X-API-KEY' : process.env.SIMPLE_HASH_API_KEY
-    }
-}
 
 const getSheepAssetFloorPrice = (req: Request, res: Response) => {
     // Fetch data related to Wolf Game Sheep floor price
     axios.get(API_URL + '/traits/collection/' + process.env.WOLF_GAME_SHEEP_WOLF_COLLECTION_ID + 
-             '/floor?trait_type=Type&value=Sheep', options)
+             '/floor?trait_type=Type&value=Sheep', {
+                headers: {
+                    'X-API-KEY': process.env.SIMPLE_HASH_API_KEY
+                }
+             })
     .then(response => {
         res.status(200).json({
             price: response.data.floor_price.value
@@ -35,7 +25,11 @@ const getSheepAssetFloorPrice = (req: Request, res: Response) => {
 const getWolfAssetFloorPrice = (req: Request, res: Response) => {
     // Fetch data related to Wolf Game Wolf floor price
     axios.get(API_URL + '/traits/collection/' + process.env.WOLF_GAME_SHEEP_WOLF_COLLECTION_ID + 
-             '/floor?trait_type=Type&value=Wolf', options)
+             '/floor?trait_type=Type&value=Wolf', {
+                headers: {
+                    'X-API-KEY': process.env.SIMPLE_HASH_API_KEY
+                }
+             })
     .then(response => {
         res.status(200).json({
             price: response.data.floor_price.value
@@ -51,7 +45,11 @@ const getWolfAssetFloorPrice = (req: Request, res: Response) => {
 const getWolfAlphaFivePrice = (req: Request, res: Response) => {
     // Fetch data related to Wolf Game Alpha Five floor price
     axios.get(API_URL + '/traits/collection/' + process.env.WOLF_GAME_SHEEP_WOLF_COLLECTION_ID + 
-             '/floor?trait_type=Alpha%20Score&value=5', options)
+             '/floor?trait_type=Alpha%20Score&value=5', {
+                headers: {
+                    'X-API-KEY': process.env.SIMPLE_HASH_API_KEY
+                }
+             })
     .then(response => {
         res.status(200).json({
             price: response.data.floor_price.value
@@ -67,7 +65,11 @@ const getWolfAlphaFivePrice = (req: Request, res: Response) => {
 const getWolfAlphaSixPrice = (req: Request, res: Response) => {
     // Fetch data related to Wolf Game Alpha Six floor price
     axios.get(API_URL + '/traits/collection/' + process.env.WOLF_GAME_SHEEP_WOLF_COLLECTION_ID + 
-             '/floor?trait_type=Alpha%20Score&value=6', options)
+             '/floor?trait_type=Alpha%20Score&value=6', {
+                headers: {
+                    'X-API-KEY': process.env.SIMPLE_HASH_API_KEY
+                }
+             })
     .then(response => {
         res.status(200).json({
             price: response.data.floor_price.value
@@ -83,7 +85,11 @@ const getWolfAlphaSixPrice = (req: Request, res: Response) => {
 const getWolfAlphaSevenPrice = (req: Request, res: Response) => {
     // Fetch data related to Wolf Game Alpha Seven floor price
     axios.get(API_URL + '/traits/collection/' + process.env.WOLF_GAME_SHEEP_WOLF_COLLECTION_ID + 
-             '/floor?trait_type=Alpha%20Score&value=7', options)
+             '/floor?trait_type=Alpha%20Score&value=7', {
+                headers: {
+                    'X-API-KEY': process.env.SIMPLE_HASH_API_KEY
+                }
+             })
     .then(response => {
         res.status(200).json({
             price: response.data.floor_price.value
@@ -99,7 +105,11 @@ const getWolfAlphaSevenPrice = (req: Request, res: Response) => {
 const getWolfAlphaEightPrice = (req: Request, res: Response) => {
     // Fetch data related to Wolf Game Alpha Eight floor price
     axios.get(API_URL + '/traits/collection/' + process.env.WOLF_GAME_SHEEP_WOLF_COLLECTION_ID + 
-             '/floor?trait_type=Alpha%20Score&value=8', options)
+             '/floor?trait_type=Alpha%20Score&value=8', {
+                headers: {
+                    'X-API-KEY': process.env.SIMPLE_HASH_API_KEY
+                }
+             })
     .then(response => {
         res.status(200).json({
             price: response.data.floor_price.value
@@ -115,7 +125,11 @@ const getWolfAlphaEightPrice = (req: Request, res: Response) => {
 const getSheepGenTwoFloorPrice = (req: Request, res: Response) => {
     // Fetch data related to Wolf Game Sheep Gen 2 floor price
     axios.get(API_URL + '/traits/collection/' + process.env.WOLF_GAME_GEN_TWO_COLLECTION_ID + 
-             '/floor?trait_type=Type&value=Sheep', options)
+             '/floor?trait_type=Type&value=Sheep', {
+                headers: {
+                    'X-API-KEY': process.env.SIMPLE_HASH_API_KEY
+                }
+             })
     .then(response => {
         res.status(200).json({
             price: response.data.floor_price.value
@@ -131,7 +145,11 @@ const getSheepGenTwoFloorPrice = (req: Request, res: Response) => {
 const getWolfAlphaFiveGenTwoPrice = (req: Request, res: Response) => {
     // Fetch data related to Wolf Game Alpha Five Gen 2 floor price
     axios.get(API_URL + '/traits/collection/' + process.env.WOLF_GAME_GEN_TWO_COLLECTION_ID + 
-             '/floor?trait_type=Alpha%20Score&value=5', options)
+             '/floor?trait_type=Alpha%20Score&value=5', {
+                headers: {
+                    'X-API-KEY': process.env.SIMPLE_HASH_API_KEY
+                }
+             })
     .then(response => {
         res.status(200).json({
             price: response.data.floor_price.value
@@ -147,7 +165,11 @@ const getWolfAlphaFiveGenTwoPrice = (req: Request, res: Response) => {
 const getWolfAlphaSixGenTwoPrice = (req: Request, res: Response) => {
     // Fetch data related to Wolf Game Alpha Six Gen 2 floor price
     axios.get(API_URL + '/traits/collection/' + process.env.WOLF_GAME_GEN_TWO_COLLECTION_ID + 
-             '/floor?trait_type=Alpha%20Score&value=6', options)
+             '/floor?trait_type=Alpha%20Score&value=6', {
+                headers: {
+                    'X-API-KEY': process.env.SIMPLE_HASH_API_KEY
+                }
+             })
     .then(response => {
         res.status(200).json({
             price: response.data.floor_price.value
@@ -163,7 +185,11 @@ const getWolfAlphaSixGenTwoPrice = (req: Request, res: Response) => {
 const getWolfAlphaSevenGenTwoPrice = (req: Request, res: Response) => {
     // Fetch data related to Wolf Game Alpha Seven Gen 2 floor price
     axios.get(API_URL + '/traits/collection/' + process.env.WOLF_GAME_GEN_TWO_COLLECTION_ID + 
-             '/floor?trait_type=Alpha%20Score&value=7', options)
+             '/floor?trait_type=Alpha%20Score&value=7', {
+                headers: {
+                    'X-API-KEY': process.env.SIMPLE_HASH_API_KEY
+                }
+             })
     .then(response => {
         res.status(200).json({
             price: response.data.floor_price.value

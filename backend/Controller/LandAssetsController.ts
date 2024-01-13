@@ -1,25 +1,15 @@
 import { Request, Response } from 'express';
 import axios from 'axios';
 import { SIMPLEHASH_URL as API_URL } from '../util/simpleHashAPIURLEndpoint';
-import * as dotenv from 'dotenv';
-
-// Set configuration to path where the .env file resides in the development environment
-dotenv.config({ path: '../.env '});
-
-// Set options for API request
-const options = {
-    method: 'GET',
-    headers: {
-        'accept' : 'application/json',
-        'content-type': 'application/json',
-        'X-API-KEY' : process.env.SIMPLE_HASH_API_KEY
-    }
-}
 
 const getLandFloorPrice = (req: Request, res: Response) => {
     // Fetch data related to Wolf Game Land floor price
     axios.get(API_URL + '/traits/collection/' + process.env.WOLF_GAME_LAND_COLLECION_ID + 
-             '/floor?trait_type=Structures&value=NO', options)
+             '/floor?trait_type=Structures&value=NO', {
+                headers: {
+                    'X-API-KEY': process.env.SIMPLE_HASH_API_KEY
+                }
+             })
     .then(response => {
         res.status(200).json({
             price: response.data.floor_price.value
@@ -35,7 +25,11 @@ const getLandFloorPrice = (req: Request, res: Response) => {
 const getLandStructureFloorPrice = (req: Request, res: Response) => {
     // Fetch data related to Wolf Game Land Structure floor price
     axios.get(API_URL + '/traits/collection/' + process.env.WOLF_GAME_LAND_COLLECION_ID + 
-             '/floor?trait_type=Structures&value=YES', options)
+             '/floor?trait_type=Structures&value=YES', {
+                headers: {
+                    'X-API-KEY': process.env.SIMPLE_HASH_API_KEY
+                }
+             })
     .then(response => {
         res.status(200).json({
             price: response.data.floor_price.value
@@ -51,7 +45,11 @@ const getLandStructureFloorPrice = (req: Request, res: Response) => {
 const getCzeroLevelOnePrice = (req: Request, res: Response) => {
     // Fetch data related to Wolf Game Land C0 floor (level 1) price
     axios.get(API_URL + '/traits/collection/' + process.env.WOLF_GAME_LAND_COLLECION_ID + 
-             '/floor?trait_type=Peak%20Level&value=1', options)
+             '/floor?trait_type=Peak%20Level&value=1', {
+                headers: {
+                    'X-API-KEY': process.env.SIMPLE_HASH_API_KEY
+                }
+             })
     .then(response => {
         res.status(200).json({
             price: response.data.floor_price.value
@@ -67,7 +65,11 @@ const getCzeroLevelOnePrice = (req: Request, res: Response) => {
 const getCzeroLevelTwoPrice = (req: Request, res: Response) => {
     // Fetch data related to Wolf Game Land C0 floor (level 2) price
     axios.get(API_URL + '/traits/collection/' + process.env.WOLF_GAME_LAND_COLLECION_ID + 
-             '/floor?trait_type=Peak%20Level&value=2', options)
+             '/floor?trait_type=Peak%20Level&value=2', {
+                headers: {
+                    'X-API-KEY': process.env.SIMPLE_HASH_API_KEY
+                }
+             })
     .then(response => {
         res.status(200).json({
             price: response.data.floor_price.value
@@ -83,7 +85,11 @@ const getCzeroLevelTwoPrice = (req: Request, res: Response) => {
 const getCzeroLevelThreePrice = (req: Request, res: Response) => {
     // Fetch data related to Wolf Game Land C0 floor (level 3) price
     axios.get(API_URL + '/traits/collection/' + process.env.WOLF_GAME_LAND_COLLECION_ID + 
-             '/floor?trait_type=Peak%20Level&value=3', options)
+             '/floor?trait_type=Peak%20Level&value=3', {
+                headers: {
+                    'X-API-KEY': process.env.SIMPLE_HASH_API_KEY
+                }
+             })
     .then(response => {
         res.status(200).json({
             price: response.data.floor_price.value

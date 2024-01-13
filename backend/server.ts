@@ -3,6 +3,10 @@ import FarmerAssetRoute from './Routes/FarmerAssetsRoute';
 import GameAssetRoute from './Routes/GameAssetsRoute';
 import LandAssetRoute from './Routes/LandAssetsRoute';
 import cors from 'cors';
+import * as dotenv from 'dotenv';
+
+// Set configuration to path where the .env file resides in development environment
+dotenv.config();
 
 // Spin up Node server
 const app: Express = express();
