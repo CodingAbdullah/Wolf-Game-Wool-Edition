@@ -27,7 +27,7 @@ const getLandFloorPrice = (req: Request, res: Response) => {
     })
     .catch(err => {
         res.status(400).json({
-            message: "Could not fetch Alpha 5 Wolf floor price data " + err
+            message: "Could not fetch Wolf Game Structure price data " + err
         });
     });
 }
