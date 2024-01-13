@@ -12,7 +12,7 @@ const getSheepAssetFloorPrice = (req: Request, res: Response) => {
              })
     .then(response => {
         res.status(200).json({
-            price: response.data.floor_price.value
+            price: Object.keys(response.data).length === 0 ? 0 : response.data.floor_price.value
         });
     })
     .catch(err => {
@@ -32,7 +32,7 @@ const getWolfAssetFloorPrice = (req: Request, res: Response) => {
              })
     .then(response => {
         res.status(200).json({
-            price: response.data.floor_price.value
+            price: Object.keys(response.data).length === 0 ? 0 : response.data.floor_price.value
         });
     })
     .catch(err => {
@@ -52,7 +52,7 @@ const getWolfAlphaFivePrice = (req: Request, res: Response) => {
              })
     .then(response => {
         res.status(200).json({
-            price: response.data.floor_price.value
+            price: Object.keys(response.data).length === 0 ? 0 : response.data.floor_price.value
         });
     })
     .catch(err => {
@@ -72,7 +72,7 @@ const getWolfAlphaSixPrice = (req: Request, res: Response) => {
              })
     .then(response => {
         res.status(200).json({
-            price: response.data.floor_price.value
+            price: Object.keys(response.data).length === 0 ? 0 : response.data.floor_price.value
         });
     })
     .catch(err => {
@@ -92,7 +92,7 @@ const getWolfAlphaSevenPrice = (req: Request, res: Response) => {
              })
     .then(response => {
         res.status(200).json({
-            price: response.data.floor_price.value
+            price: Object.keys(response.data).length === 0 ? 0 : response.data.floor_price.value
         });
     })
     .catch(err => {
@@ -112,7 +112,7 @@ const getWolfAlphaEightPrice = (req: Request, res: Response) => {
              })
     .then(response => {
         res.status(200).json({
-            price: response.data.floor_price.value
+            price: Object.keys(response.data).length === 0 ? 0 : response.data.floor_price.value
         });
     })
     .catch(err => {
@@ -132,7 +132,7 @@ const getSheepGenTwoFloorPrice = (req: Request, res: Response) => {
              })
     .then(response => {
         res.status(200).json({
-            price: response.data.floor_price.value
+            price: Object.keys(response.data).length === 0 ? 0 : response.data.floor_price.value
         });
     })
     .catch(err => {
@@ -152,7 +152,7 @@ const getWolfAlphaFiveGenTwoPrice = (req: Request, res: Response) => {
              })
     .then(response => {
         res.status(200).json({
-            price: response.data.floor_price.value
+            price: Object.keys(response.data).length === 0 ? 0 : response.data.floor_price.value
         });
     })
     .catch(err => {
@@ -172,7 +172,7 @@ const getWolfAlphaSixGenTwoPrice = (req: Request, res: Response) => {
              })
     .then(response => {
         res.status(200).json({
-            price: response.data.floor_price.value
+            price: Object.keys(response.data).length === 0 ? 0 : response.data.floor_price.value
         });
     })
     .catch(err => {
@@ -192,7 +192,7 @@ const getWolfAlphaSevenGenTwoPrice = (req: Request, res: Response) => {
              })
     .then(response => {
         res.status(200).json({
-            price: response.data.floor_price.value
+            price: Object.keys(response.data).length === 0 ? 0 : response.data.floor_price.value
         });
     })
     .catch(err => {

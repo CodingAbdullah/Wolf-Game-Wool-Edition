@@ -12,7 +12,7 @@ const getLandFloorPrice = (req: Request, res: Response) => {
              })
     .then(response => {
         res.status(200).json({
-            price: response.data.floor_price.value
+            price: Object.keys(response.data).length === 0 ? 0 : response.data.floor_price.value
         });
     })
     .catch(err => {
@@ -32,7 +32,7 @@ const getLandStructureFloorPrice = (req: Request, res: Response) => {
              })
     .then(response => {
         res.status(200).json({
-            price: response.data.floor_price.value
+            price: Object.keys(response.data).length === 0 ? 0 : response.data.floor_price.value
         });
     })
     .catch(err => {
@@ -52,7 +52,7 @@ const getCzeroLevelOnePrice = (req: Request, res: Response) => {
              })
     .then(response => {
         res.status(200).json({
-            price: response.data.floor_price.value
+            price: Object.keys(response.data).length === 0 ? 0 : response.data.floor_price.value
         });
     })
     .catch(err => {
@@ -72,7 +72,7 @@ const getCzeroLevelTwoPrice = (req: Request, res: Response) => {
              })
     .then(response => {
         res.status(200).json({
-            price: response.data.floor_price.value
+            price: Object.keys(response.data).length === 0 ? 0 : response.data.floor_price.value
         });
     })
     .catch(err => {
@@ -92,7 +92,7 @@ const getCzeroLevelThreePrice = (req: Request, res: Response) => {
              })
     .then(response => {
         res.status(200).json({
-            price: response.data.floor_price.value
+            price: Object.keys(response.data).length === 0 ? 0 : response.data.floor_price.value
         });
     })
     .catch(err => {

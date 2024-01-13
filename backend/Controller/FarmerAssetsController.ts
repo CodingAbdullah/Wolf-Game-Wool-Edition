@@ -13,7 +13,7 @@ const getFarmerFloorPrice = (req: Request, res: Response) => {
              })
     .then(response => {
         res.status(200).json({
-            price: response.data.floor_price.value
+            price: Object.keys(response.data).length === 0 ? 0 : response.data.floor_price.value
         });
     })
     .catch(err => {
@@ -34,7 +34,7 @@ const getFarmerHundoPrice = (req: Request, res: Response) => {
              })
     .then(response => {
         res.status(200).json({
-            price: response.data.floor_price.value
+            price: Object.keys(response.data).length === 0 ? 0 : response.data.floor_price.value
         });
     })
     .catch(err => {
@@ -55,7 +55,7 @@ const getFarmerTheKidPrice = (req: Request, res: Response) => {
              })
     .then(response => {
         res.status(200).json({
-            price: response.data.floor_price.value
+            price: Object.keys(response.data).length === 0 ? 0 : response.data.floor_price.value
         });
     })
     .catch(err => {
@@ -76,7 +76,7 @@ const getFarmerAverageJoePrice = (req: Request, res: Response) => {
              })
     .then(response => {
         res.status(200).json({
-            price: response.data.floor_price.value
+            price: Object.keys(response.data).length === 0 ? 0 : response.data.floor_price.value
         });
     })
     .catch(err => {
@@ -97,7 +97,7 @@ const getFarmerAboveAverageJanePrice = (req: Request, res: Response) => {
              })
     .then(response => {
         res.status(200).json({
-            price: response.data.floor_price.value
+            price: Object.keys(response.data).length === 0 ? 0 : response.data.floor_price.value
         });
     })
     .catch(err => {
@@ -118,7 +118,7 @@ const getFarmerDieselPrice = (req: Request, res: Response) => {
              })
     .then(response => {
         res.status(200).json({
-            price: response.data.floor_price.value
+            price: Object.keys(response.data).length === 0 ? 0 : response.data.floor_price.value
         });
     })
     .catch(err => {
@@ -139,7 +139,7 @@ const getFarmerBigMamaPrice = (req: Request, res: Response) => {
              })
     .then(response => {
         res.status(200).json({
-            price: response.data.floor_price.value
+            price: Object.keys(response.data).length === 0 ? 0 : response.data.floor_price.value
         });
     })
     .catch(err => {
@@ -160,7 +160,7 @@ const getFarmerBigDaddyPrice = (req: Request, res: Response) => {
              })
     .then(response => {
         res.status(200).json({
-            price: response.data.floor_price.value
+            price: Object.keys(response.data).length === 0 ? 0 : response.data.floor_price.value
         });
     })
     .catch(err => {
