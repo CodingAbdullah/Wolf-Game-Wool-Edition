@@ -1,0 +1,604 @@
+openapi: 3.0.0
+servers:
+  # Added by API Auto Mocking Plugin
+  - description: Local Dev Testing
+    url: http://localhost:5000
+info:
+  description: API dedicated to fetching Wolf Game asset prices
+  version: "1.0.0"
+  title: Wolf Game WOOL Edition
+  license:
+    name: License Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+tags:
+  - name: Wolf Game Farmers
+    description: Fetch Wolf Game Farmer floor prices
+  - name: Wolf Game Genesis Land
+    description: Fetch Wolf Game Land floor prices
+  - name: Wolf Game Wolf & Sheep
+    description: Fetch Wolf Game Wolf & Sheep floor prices
+paths:
+  /wolf-game-farmer-floor-price:
+    get:
+      tags:
+        - Wolf Game Farmers
+      summary: Fetches Wolf Game Farmer floor price
+      operationId: getWolfGameFarmerFloorPrice
+      description: |
+        By passing in the appropriate parameters, you can lookup the asset floor price
+      parameters:
+        - in: header
+          name: X-API-KEY
+          description: Must pass in token as a header for making authenticated calls
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Asset floor price displayed
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Wolfgame'
+        '400':
+          description: Bad request
+  /wolf-game-farmer-average-joe-price:
+    get:
+      tags:
+        - Wolf Game Farmers
+      summary: Fetches Wolf Game Average Joe floor price
+      operationId: getWolfGameFarmerAverageJoePrice
+      description: |
+        By passing in the appropriate parameters, you can lookup the asset floor price
+      parameters:
+        - in: header
+          name: X-API-KEY
+          description: Must pass in token as a header for making authenticated calls
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Asset floor price displayed
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Wolfgame'
+        '400':
+          description: Bad Request
+  /wolf-game-farmer-above-average-jane-price:
+    get:
+      tags:
+        - Wolf Game Farmers
+      summary: Fetches Wolf Game Above Average Jane floor price
+      operationId: getWolfGameAboveAverageJanePrice
+      description: |
+        By passing in the appropriate parameters, you can lookup the asset floor price
+      parameters:
+        - in: header
+          name: X-API-KEY
+          description: Must pass in token as a header for making authenticated calls
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Asset floor price displayed
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Wolfgame'
+        '400':
+          description: Bad Request
+  /wolf-game-farmer-hundo-price:
+    get:
+      tags:
+        - Wolf Game Farmers
+      summary: Fetches Wolf Game Hundo floor price
+      operationId: getWolfGameHundoPrice
+      description: |
+        By passing in the appropriate parameters, you can lookup the asset floor price
+      parameters:
+        - in: header
+          name: X-API-KEY
+          description: Must pass in token as a header for making authenticated calls
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Asset floor price displayed
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Wolfgame'
+        '400':
+          description: Bad Request
+  /wolf-game-farmer-diesel-price:
+    get:
+      tags:
+        - Wolf Game Farmers
+      summary: Fetches Wolf Game Diesel floor price
+      operationId: getWolfGameDieselPrice
+      description: |
+        By passing in the appropriate parameters, you can lookup the asset floor price
+      parameters:
+        - in: header
+          name: X-API-KEY
+          description: Must pass in token as a header for making authenticated calls
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Asset floor price displayed
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Wolfgame'
+        '400':
+          description: Bad Request
+  /wolf-game-farmer-big-mama-price:
+    get:
+      tags:
+        - Wolf Game Farmers
+      summary: Fetches Wolf Game Big Mama price
+      operationId: getWolfGameBigMamaPrice
+      description: |
+        By passing in the appropriate parameters, you can lookup the asset floor price
+      parameters:
+        - in: header
+          name: X-API-KEY
+          description: Must pass in token as a header for making authenticated calls
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Asset floor price displayed
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Wolfgame'
+        '400':
+          description: Bad Request
+  /wolf-game-farmer-big-daddy-price:
+    get:
+      tags:
+        - Wolf Game Farmers
+      summary: Fetches Wolf Game Big Daddy price
+      operationId: getWolfGameBigDaddyPrice
+      description: |
+        By passing in the appropriate parameters, you can lookup the asset floor price
+      parameters:
+        - in: header
+          name: X-API-KEY
+          description: Must pass in token as a header for making authenticated calls
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Asset floor price displayed
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Wolfgame'
+        '400':
+          description: Bad Request
+  /wolf-game-land-floor-price:
+    get:
+      tags:
+        - Wolf Game Genesis Land
+      summary: Fetches Wolf Game Land floor price
+      operationId: getWolfGameLandFloorPrice
+      description: |
+        By passing in the appropriate parameters, you can lookup the asset floor price
+      parameters:
+        - in: header
+          name: X-API-KEY
+          description: Must pass in token as a header for making authenticated calls
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Asset floor price displayed
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Wolfgame'
+        '400':
+          description: Bad Request
+  /wolf-game-land-structure-floor-price:
+    get:
+      tags:
+        - Wolf Game Genesis Land
+      summary: Fetches Wolf Game Structure floor price
+      operationId: getWolfGameLandStructureFloorPrice
+      description: |
+        By passing in the appropriate parameters, you can lookup the asset floor price
+      parameters:
+        - in: header
+          name: X-API-KEY
+          description: Must pass in token as a header for making authenticated calls
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Asset floor price displayed
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Wolfgame'
+        '400':
+          description: Bad Request
+  /wolf-game-land-czero-level-one-price:
+    get:
+      tags:
+        - Wolf Game Genesis Land
+      summary: Fetches Wolf Game C0 Peak Level 1 floor price
+      operationId: getWolfGameLandCzeroLevelOnePrice
+      description: |
+        By passing in the appropriate parameters, you can lookup the asset floor price
+      parameters:
+        - in: header
+          name: X-API-KEY
+          description: Must pass in token as a header for making authenticated calls
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Asset floor price displayed
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Wolfgame'
+        '400':
+          description: Bad Request
+  /wolf-game-land-czero-level-two-price:
+    get:
+      tags:
+        - Wolf Game Genesis Land
+      summary: Fetches Wolf Game C0 Peak Level 2 floor price
+      operationId: getWolfGameLandCzeroLevelTwoPrice
+      description: |
+        By passing in the appropriate parameters, you can lookup the asset floor price
+      parameters:
+        - in: header
+          name: X-API-KEY
+          description: Must pass in token as a header for making authenticated calls
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Asset floor price displayed
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Wolfgame'
+        '400':
+          description: Bad Request
+  /wolf-game-land-czero-level-three-price:
+    get:
+      tags:
+        - Wolf Game Genesis Land
+      summary: Fetches Wolf Game C0 Peak Level 3 floor price
+      operationId: getWolfGameLandCzeroLevelThreePrice
+      description: |
+        By passing in the appropriate parameters, you can lookup the asset floor price
+      parameters:
+        - in: header
+          name: X-API-KEY
+          description: Must pass in token as a header for making authenticated calls
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Asset floor price displayed
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Wolfgame'
+        '400':
+          description: Bad Request
+  /wolf-game-sheep-floor-price:
+    get:
+      tags:
+        - Wolf Game Wolf & Sheep
+      summary: Fetches Wolf Game Sheep floor price
+      operationId: getWolfGameSheepFloorPrice
+      description: |
+        By passing in the appropriate parameters, you can lookup the asset floor price
+      parameters:
+        - in: header
+          name: X-API-KEY
+          description: Must pass in token as a header for making authenticated calls
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Asset floor price displayed
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Wolfgame'
+        '400':
+          description: Bad Request
+  /wolf-game-sheep-floor-gen-two-price:
+    get:
+      tags:
+        - Wolf Game Wolf & Sheep
+      summary: Fetches Wolf Game Sheep Gen 2 floor price
+      operationId: getWolfGameSheepGen2Price
+      description: |
+        By passing in the appropriate parameters, you can lookup the asset floor price
+      parameters:
+        - in: header
+          name: X-API-KEY
+          description: Must pass in token as a header for making authenticated calls
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Asset floor price displayed
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Wolfgame'
+        '400':
+          description: Bad Request
+  /wolf-game-wolf-floor-price:
+    get:
+      tags:
+        - Wolf Game Wolf & Sheep
+      summary: Fetches Wolf Game Wolf floor price
+      operationId: getWolfGameWolfFloorPrice
+      description: |
+        By passing in the appropriate parameters, you can lookup the asset floor price
+      parameters:
+        - in: header
+          name: X-API-KEY
+          description: Must pass in token as a header for making authenticated calls
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Asset floor price displayed
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Wolfgame'
+        '400':
+          description: Bad Request
+  /wolf-game-wolf-alpha-five-price:
+    get:
+      tags:
+        - Wolf Game Wolf & Sheep
+      summary: Fetches Wolf Game Wolf Alpha 5 floor price
+      operationId: getWolfGameWolfAlpha5Price
+      description: |
+        By passing in the appropriate parameters, you can lookup the asset floor price
+      parameters:
+        - in: header
+          name: X-API-KEY
+          description: Must pass in token as a header for making authenticated calls
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Asset floor price displayed
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Wolfgame'
+        '400':
+          description: Bad Request
+  /wolf-game-wolf-alpha-five-gen-two-price:
+    get:
+      tags:
+        - Wolf Game Wolf & Sheep
+      summary: Fetches Wolf Game Wolf Alpha 5 Gen 2 floor price
+      operationId: getWolfGameWolfAlpha5Gen2Price
+      description: |
+        By passing in the appropriate parameters, you can lookup the asset floor price
+      parameters:
+        - in: header
+          name: X-API-KEY
+          description: Must pass in token as a header for making authenticated calls
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Asset floor price displayed
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Wolfgame'
+        '400':
+          description: Bad Request
+  /wolf-game-wolf-alpha-six-price:
+    get:
+      tags:
+        - Wolf Game Wolf & Sheep
+      summary: Fetches Wolf Game Wolf Alpha 6 floor price
+      operationId: getWolfGameWolfAlpha6Price
+      description: |
+        By passing in the appropriate parameters, you can lookup the asset floor price
+      parameters:
+        - in: header
+          name: X-API-KEY
+          description: Must pass in token as a header for making authenticated calls
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Asset floor price displayed
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Wolfgame'
+        '400':
+          description: Bad Request
+  /wolf-game-wolf-alpha-six-gen-two-price:
+    get:
+      tags:
+        - Wolf Game Wolf & Sheep
+      summary: Fetches Wolf Game Wolf Alpha 6 Gen 2 floor price
+      operationId: getWolfGameWolfAlpha6Gen2Price
+      description: |
+        By passing in the appropriate parameters, you can lookup the asset floor price
+      parameters:
+        - in: header
+          name: X-API-KEY
+          description: Must pass in token as a header for making authenticated calls
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Asset floor price displayed
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Wolfgame'
+        '400':
+          description: Bad Request
+  /wolf-game-wolf-alpha-seven-price:
+    get:
+      tags:
+        - Wolf Game Wolf & Sheep
+      summary: Fetches Wolf Game Wolf Alpha 7 floor price
+      operationId: getWolfGameWolfAlpha7Price
+      description: |
+        By passing in the appropriate parameters, you can lookup the asset floor price
+      parameters:
+        - in: header
+          name: X-API-KEY
+          description: Must pass in token as a header for making authenticated calls
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Asset floor price displayed
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Wolfgame'
+        '400':
+          description: Bad Request
+  /wolf-game-wolf-alpha-seven-gen-two-price:
+    get:
+      tags:
+        - Wolf Game Wolf & Sheep
+      summary: Fetches Wolf Game Wolf Alpha 7 Gen 2 floor price
+      operationId: getWolfGameWolfAlpha7Gen2Price
+      description: |
+        By passing in the appropriate parameters, you can lookup the asset floor price
+      parameters:
+        - in: header
+          name: X-API-KEY
+          description: Must pass in token as a header for making authenticated calls
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Asset floor price displayed
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Wolfgame'
+        '400':
+          description: Bad Request
+  /wolf-game-wolf-alpha-eight-price:
+    get:
+      tags:
+        - Wolf Game Wolf & Sheep
+      summary: Fetches Wolf Game Wolf Alpha 8 floor price
+      operationId: getWolfGameWolfAlpha8Price
+      description: |
+        By passing in the appropriate parameters, you can lookup the asset floor price
+      parameters:
+        - in: header
+          name: X-API-KEY
+          description: Must pass in token as a header for making authenticated calls
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Asset floor price displayed
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Wolfgame'
+        '400':
+          description: Bad Request
+components:
+  schemas:
+    Wolfgame:
+      type: object
+      required:
+        - price
+      properties:
+        price:
+          type: integer
+          format: int32
+          example: 199000000000000000
+      description: Schema describing the type of API response expected
