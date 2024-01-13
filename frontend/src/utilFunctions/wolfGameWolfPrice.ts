@@ -1,37 +1,97 @@
 import axios from 'axios';
 
-export const wolfGameWolfFloorPrice = () => {
-    // Code to go here..
+// Endpoints to fetch Wolves/Wolves Generation 2 asset prices
+export const wolfGameWolfFloorPrice = async () => {
+    const response = await axios.get('https://localhost:5000/wolf-game-wolf-floor-price');
+
+    if (response.status === 200){
+        return response.data;
+    }
+    else {
+        throw new Error("Could not fetch Wolf Game Wolf floor data");
+    }
 }
 
-export const wolfGameWolfGen2FloorPrice = () => {
-    // Code to go here..
+// Fetch Alpha 5 Wolf floor price
+export const wolfGameWolfA5Price = async () => {
+    const response = await axios.get('https://localhost:5000/wolf-game-wolf-alpha-five-price');
+
+    if (response.status === 200){
+        return response.data;
+    }
+    else {
+        throw new Error("Could not fetch Wolf Game Wolf Alpha 5 data");
+    }
 }
 
-export const wolfGameWolfA5Price = () => {
-    // Code to go here..
+// Fetch Alpha 5 Generation 2 Wolf floor price
+export const wolfGameWolfA5Gen2Price = async () => {
+    const response = await axios.get('https://localhost:5000/wolf-game-wolf-alpha-five-gen-two-price');
+
+    if (response.status === 200){
+        return response.data;
+    }
+    else {
+        throw new Error("Could not fetch Wolf Game Wolf Alpha 5 Gen 2 data");
+    }
 }
 
-export const wolfGameWolfA5Gen2Price = () => {
-    // Code to go here..
+// Fetch Alpha 6 Wolf floor price
+export const wolfGameWolfA6Price = async () => {
+    const response = await axios.get('https://localhost:5000/wolf-game-wolf-alpha-six-price');
+
+    if (response.status === 200){
+        return response.data;
+    }
+    else {
+        throw new Error("Could not fetch Wolf Game Wolf Alpha 6 data");
+    }
 }
 
-export const wolfGameWolfA6Price = () => {
-    // Code to go here..
+// Fetch Alpha 6 Generation 2 Wolf floor price
+export const wolfGameWolfA6Gen2Price = async () => {
+    const response = await axios.get('https://localhost:5000/wolf-game-wolf-alpha-six-gen-two-price');
+
+    if (response.status === 200){
+        return response.data;
+    }
+    else {
+        throw new Error("Could not fetch Wolf Game Wolf Alpha 6 Gen 2 data");
+    }
 }
 
-export const wolfGameWolfA6Gen2Price = () => {
-    // Code to go here..
+// Fetch Alpha 7 Wolf floor price
+export const wolfGameWolfA7Price = async () => {
+    const response = await axios.get('https://localhost:5000/wolf-game-wolf-alpha-seven-price');
+
+    if (response.status === 200){
+        return response.data;
+    }
+    else {
+        throw new Error("Could not fetch Wolf Game Wolf Alpha 7 data");
+    }
 }
 
-export const wolfGameWolfA7Price = () => {
-    // Code to go here..  
+// Fetch Alpha 7 Generation 2 Wolf floor price
+export const wolfGameWolfA7Gen2Price = async () => {
+    const response = await axios.get('https://localhost:5000/wolf-game-wolf-alpha-seven-gen-two-price');
+
+    if (response.status === 200){
+        return response.data;
+    }
+    else {
+        throw new Error("Could not fetch Wolf Game Wolf Alpha 7 Gen 2 data");
+    }
 }
 
-export const wolfGameWolfA7Gen2Price = () => {
-    // Code to go here..
-}
+// Fetch Alpha 8 Wolf floor price
+export const wolfGameWolfA8Price = async () => {
+    const response = await axios.get('https://localhost:5000/wolf-game-wolf-alpha-eight-price');
 
-export const wolfGameWolfA8Price = () => {
-    // Code to go here..  
+    if (response.status === 200){
+        return response.data;
+    }
+    else {
+        throw new Error("Could not fetch Wolf Game Wolf Alpha 8 data");
+    }
 }
