@@ -19,7 +19,7 @@ const HomePage: FC = () => {
                     userSelect: 'none', fontFamily: 'broken console', 
                     width: '200px', height: '40px', backgroundColor: 'rgb(131, 75, 27)', 
                     borderWidth: '4px', borderColor: 'rgb(99, 54, 33)', borderStyle: 'outset' }}>
-                        <a href="#/wolf-sheep" style={{ color: 'white'}}>
+                        <a href="#/wolves-sheep" style={{ color: 'white'}}>
                             Asset Prices
                         </a>
             </button>

@@ -87,7 +87,13 @@ const FarmerPricePage: FC = () => {
                                         <br />
                                         <img id="p" width="50" height="50" src="https://wg-farmers.s3.us-east-2.amazonaws.com/0x99271479-headshot.png" />
                                     </th>
-                                    <td>{ Number(farmerAverageJoePriceQuery.data.price)/1000000000000000000 + " ETH" }</td>
+                                    <td>
+                                        { 
+                                            Number(farmerAverageJoePriceQuery.data.price) === 0 
+                                                ? 'Unlisted' : 
+                                            Number(farmerAverageJoePriceQuery.data.price)/1000000000000000000 + " ETH" 
+                                        }
+                                    </td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
@@ -95,7 +101,13 @@ const FarmerPricePage: FC = () => {
                                         <br />
                                         <img id="p" width="50" height="50" src="https://wg-farmers.s3.us-east-2.amazonaws.com/0x2cc3e178-headshot.png" />
                                     </th>
-                                    <td>{ Number(farmerDieselPriceQuery.data.price)/1000000000000000000 + " ETH" }</td>
+                                    <td>
+                                        { 
+                                            Number(farmerDieselPriceQuery.data.price) === 0 
+                                            ? 'Unlisted' : 
+                                            Number(farmerDieselPriceQuery.data.price)/1000000000000000000 + " ETH" 
+                                        }
+                                    </td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
@@ -103,7 +115,13 @@ const FarmerPricePage: FC = () => {
                                         <br />
                                         <img id="p" width="50" height="50" src="https://wg-farmers.s3.us-east-2.amazonaws.com/0x5cd13b11-headshot.png" />
                                     </th>
-                                    <td>{ Number(farmerTheKidPriceQuery.data.price)/1000000000000000000 + " ETH" }</td>
+                                    <td>
+                                        { 
+                                            Number(farmerTheKidPriceQuery.data.price) === 0 
+                                            ? 'Unlisted' : 
+                                            Number(farmerTheKidPriceQuery.data.price)/1000000000000000000 + " ETH" 
+                                        }
+                                    </td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
@@ -111,7 +129,13 @@ const FarmerPricePage: FC = () => {
                                         <br />
                                         <img id="p" width="50" height="50" src="https://wg-farmers.s3.us-east-2.amazonaws.com/0x8b302c5c-headshot.png" />
                                     </th>
-                                    <td>{ Number(farmerAboveAverageJanePriceQuery.data.price)/1000000000000000000 + " ETH" }</td>
+                                    <td>
+                                        { 
+                                            Number(farmerAboveAverageJanePriceQuery.data.price) === 0 
+                                                ? 'Unlisted' : 
+                                            Number(farmerAboveAverageJanePriceQuery.data.price)/1000000000000000000 + " ETH" 
+                                        }
+                                    </td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
@@ -119,7 +143,13 @@ const FarmerPricePage: FC = () => {
                                         <br />
                                         <img width="50" height="50" id="p" src="https://wg-farmers.s3.us-east-2.amazonaws.com/0x122f8948-headshot.png" />
                                     </th>
-                                    <td>{ Number(farmerHundoPriceQuery.data.price)/1000000000000000000 + " ETH"}</td>
+                                    <td>
+                                        { 
+                                            Number(farmerHundoPriceQuery.data.price) === 0 
+                                            ? 'Unlisted' : 
+                                            Number(farmerHundoPriceQuery.data.price)/1000000000000000000 + " ETH"
+                                        }
+                                    </td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
@@ -127,7 +157,13 @@ const FarmerPricePage: FC = () => {
                                         <br />
                                         <img width="50" height="50" id="p" src="https://wg-farmers.s3.us-east-2.amazonaws.com/0x1ad8f254-headshot.png" />
                                     </th>
-                                    <td>{ Number(farmerBigMamaPriceQuery.data.price)/1000000000000000000 + " ETH" }</td>
+                                    <td>
+                                        { 
+                                            Number(farmerBigMamaPriceQuery.data.price) === 0 
+                                            ? 'Unlisted' : 
+                                            Number(farmerBigMamaPriceQuery.data.price)/1000000000000000000 + " ETH" 
+                                        }
+                                    </td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
@@ -135,7 +171,13 @@ const FarmerPricePage: FC = () => {
                                         <br />
                                         <img width="50" height="50" id="p" src="https://wg-farmers.s3.us-east-2.amazonaws.com/0xa7d311f9-headshot.png" />
                                     </th>
-                                    <td>{ Number(farmerBigDaddyPriceQuery.data.price)/1000000000000000000 + " ETH" }</td>
+                                    <td>
+                                        { 
+                                            Number(farmerBigDaddyPriceQuery.data.price) === 0 
+                                            ? 'Unlisted' : 
+                                            Number(farmerBigDaddyPriceQuery.data.price)/1000000000000000000 + " ETH" 
+                                        }
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>

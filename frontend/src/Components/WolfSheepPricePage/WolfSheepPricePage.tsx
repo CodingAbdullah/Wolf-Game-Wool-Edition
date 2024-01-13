@@ -96,7 +96,13 @@ const WolfSheepPricePage: FC = () => {
                                         <br />
                                         <img id="p" width="50" height="50" src="https://sheep-and-wolf-images.s3-us-west-2.amazonaws.com/4825.png" />
                                     </th>
-                                    <td>{ Number(wolfGameSheepPriceQuery.data.price)/1000000000000000000 + " ETH" }</td>
+                                    <td>
+                                        { 
+                                            Number(wolfGameSheepPriceQuery.data.price) === 0 
+                                            ? 'Unlisted' : 
+                                            Number(wolfGameSheepPriceQuery.data.price)/1000000000000000000 + " ETH" 
+                                        }
+                                    </td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
@@ -104,63 +110,111 @@ const WolfSheepPricePage: FC = () => {
                                         <br />
                                         <img id="p" width="50" height="50" src="https://i.seadn.io/s/raw/files/5bc4aaae3ecd33ef787d9337741db206.png?auto=format&dpr=1&w=1000" />
                                     </th>
-                                    <td>{ Number(wolfGameSheepGenTwoPriceQuery.data.price)/1000000000000000000 + " ETH" }</td>
+                                    <td>
+                                        { 
+                                            Number(wolfGameSheepGenTwoPriceQuery.data.price) === 0 
+                                            ? 'Unlisted' : 
+                                            Number(wolfGameSheepGenTwoPriceQuery.data.price)/1000000000000000000 + " ETH" 
+                                        }
+                                    </td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
-                                        Wolf (Alpha 5)
+                                        A5 Wolf
                                         <br />
                                         <img id="p" width="50" height="50" src="https://sheep-and-wolf-images.s3-us-west-2.amazonaws.com/8414.png" />
                                     </th>
-                                    <td>{ Number(wolfGameWolfA5PriceQuery.data.price)/1000000000000000000 + " ETH" }</td>
+                                    <td>
+                                        { 
+                                            Number(wolfGameWolfA5PriceQuery.data.price) === 0 
+                                            ? 'Unlisted' : 
+                                            Number(wolfGameWolfA5PriceQuery.data.price)/1000000000000000000 + " ETH" 
+                                        }
+                                    </td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
-                                        Wolf (Alpha 5 - Gen 2)
+                                        A5 Wolf (Gen 2)
                                         <br />
                                         <img id="p" width="50" height="50" src="https://i.seadn.io/s/raw/files/4918bb5099ba63a737b23441f5633cf0.png?auto=format&dpr=1&w=1000" />
                                     </th>
-                                    <td>{ Number(wolfGameWolfA5Gen2PriceQuery.data.price)/1000000000000000000 + " ETH" }</td>
+                                    <td>
+                                        { 
+                                            Number(wolfGameWolfA5Gen2PriceQuery.data.price) === 0 
+                                            ? 'Unlisted' : 
+                                            Number(wolfGameWolfA5Gen2PriceQuery.data.price)/1000000000000000000 + " ETH" 
+                                        }
+                                    </td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
-                                        Wolf (Alpha 6)
+                                        A6 Wolf
                                         <br />
                                         <img id="p" width="50" height="50" src="https://sheep-and-wolf-images.s3-us-west-2.amazonaws.com/194.png" />
                                     </th>
-                                    <td>{ Number(wolfGameWolfA6PriceQuery.data.price)/1000000000000000000 + " ETH" }</td>
+                                    <td>
+                                        { 
+                                            Number(wolfGameWolfA6PriceQuery.data.price) === 0 
+                                            ? 'Unlisted' : 
+                                            Number(wolfGameWolfA6PriceQuery.data.price)/1000000000000000000 + " ETH" 
+                                        }
+                                    </td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
-                                        Wolf (Alpha 6 - Gen 2)
+                                        A6 Wolf (Gen 2)
                                         <br />
                                         <img id="p" width="50" height="50" src="https://i.seadn.io/s/raw/files/ff421a4fe980c70c26341e3d77fd9157.png?auto=format&dpr=1&w=1000" />
                                     </th>
-                                    <td>{ Number(wolfGameWolfA6Gen2PriceQuery.data.price)/1000000000000000000 + " ETH" }</td>
+                                    <td>
+                                        { 
+                                            Number(wolfGameWolfA6Gen2PriceQuery.data.price) === 0 
+                                            ? 'Unlisted' : 
+                                            Number(wolfGameWolfA6Gen2PriceQuery.data.price)/1000000000000000000 + " ETH" 
+                                        }
+                                    </td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
-                                        Wolf (Alpha 7)
+                                        A7 Wolf
                                         <br />
                                         <img id="p" width="50" height="50" src="https://sheep-and-wolf-images.s3-us-west-2.amazonaws.com/2772.png" />
                                     </th>
-                                    <td>{ Number(wolfGameWolfA7PriceQuery.data.price)/1000000000000000000 + " ETH" }</td>
+                                    <td>
+                                        { 
+                                            Number(wolfGameWolfA7PriceQuery.data.price) === 0 
+                                            ? 'Unlisted' : 
+                                            Number(wolfGameWolfA7PriceQuery.data.price)/1000000000000000000 + " ETH" 
+                                        }
+                                    </td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
-                                        Wolf (Alpha 7 - Gen 2)
+                                        A7 Wolf (Gen 2)
                                         <br />
                                         <img id="p" width="50" height="50" src="https://i.seadn.io/s/raw/files/5660ced1f34dbdbdaa2f8a64240f54f6.png?auto=format&dpr=1&w=1000" />
                                     </th>
-                                    <td>{ Number(wolfGameWolfA7Gen2PriceQuery.data.price)/1000000000000000000 + " ETH" }</td>
+                                    <td>
+                                        { 
+                                            Number(wolfGameWolfA7Gen2PriceQuery.data.price) === 0 
+                                            ? 'Unlisted' : 
+                                            Number(wolfGameWolfA7Gen2PriceQuery.data.price)/1000000000000000000 + " ETH" 
+                                        }
+                                    </td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
-                                        Wolf (Alpha 8)
+                                        A8 Wolf
                                         <br />
                                         <img id="p" width="50" height="50" src="https://sheep-and-wolf-images.s3-us-west-2.amazonaws.com/1701.png" />
                                     </th>
-                                    <td>{ Number(wolfGameWolfA8PriceQuery.data.price)/1000000000000000000 + " ETH" }</td>
+                                    <td>
+                                        { 
+                                            Number(wolfGameWolfA8PriceQuery.data.price) === 0 
+                                            ? 'Unlisted' : 
+                                            Number(wolfGameWolfA8PriceQuery.data.price)/1000000000000000000 + " ETH" 
+                                        }
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>

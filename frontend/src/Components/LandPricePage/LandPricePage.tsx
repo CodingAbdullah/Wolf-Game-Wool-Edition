@@ -68,7 +68,13 @@ const LandPricePage: FC = () => {
                                         <br />
                                         <img id="p" width="50" height="50" src="https://i.seadn.io/s/raw/files/93dcbc52d39874f4e4d690005ba61e07.png?auto=format&amp;dpr=1&amp;w=1000" />
                                     </th>
-                                    <td>{ Number(wolfGameLandPriceQuery.data.price)/1000000000000000000 + " ETH" }</td>
+                                    <td>
+                                        { 
+                                            Number(wolfGameLandPriceQuery.data.price) === 0 
+                                            ? 'Unlisted' : 
+                                            Number(wolfGameLandPriceQuery.data.price)/1000000000000000000 + " ETH" 
+                                        }
+                                    </td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
@@ -76,7 +82,13 @@ const LandPricePage: FC = () => {
                                         <br />
                                         <img id="p" width="50" height="50" src="https://i.seadn.io/gcs/files/49f74728b827d26fa8b10976f27d6365.png?auto=format&amp;dpr=1&amp;w=1000" />
                                     </th>
-                                    <td>{ Number(wolfGameLandStructurePriceQuery.data.price)/1000000000000000000 + " ETH" }</td>
+                                    <td>
+                                        { 
+                                            Number(wolfGameLandStructurePriceQuery.data.price) === 0 
+                                            ? 'Unlisted' : 
+                                            Number(wolfGameLandStructurePriceQuery.data.price)/1000000000000000000 + " ETH" 
+                                        }
+                                    </td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
@@ -84,7 +96,13 @@ const LandPricePage: FC = () => {
                                         <br />
                                         <img width="50" height="50" id="p" src="https://i.seadn.io/gcs/files/5c567f724606d6d742ce29ed6c5d1168.png?auto=format&amp;dpr=1&amp;w=1000" />
                                     </th>
-                                    <td>{ Number(wolfGameLandCzeroLevelOnePriceQuery.data.price)/1000000000000000000 + " ETH"}</td>
+                                    <td>
+                                        { 
+                                            Number(wolfGameLandCzeroLevelOnePriceQuery.data.price) === 0 
+                                            ? 'Unlisted' : 
+                                            Number(wolfGameLandCzeroLevelOnePriceQuery.data.price)/1000000000000000000 + " ETH"
+                                        }
+                                    </td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
@@ -92,7 +110,13 @@ const LandPricePage: FC = () => {
                                         <br />
                                         <img width="50" height="50" id="p" src="https://i.seadn.io/gcs/files/6c53a68d1c9e069be14954aaeb175631.png?auto=format&amp;dpr=1&amp;w=1000" />
                                     </th>
-                                    <td>{ Number(wolfGameLandCzeroLevelTwoPriceQuery.data.price)/1000000000000000000 + " ETH" }</td>
+                                    <td>
+                                        { 
+                                            Number(wolfGameLandCzeroLevelTwoPriceQuery.data.price) === 0 
+                                            ? 'Unlisted' : 
+                                            Number(wolfGameLandCzeroLevelTwoPriceQuery.data.price)/1000000000000000000 + " ETH" 
+                                        }
+                                    </td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
@@ -100,7 +124,12 @@ const LandPricePage: FC = () => {
                                         <br />
                                         <img width="50" height="50" id="p" src="https://i.seadn.io/gcs/files/70d8bbb3fa7413edd0971afa8c1bbf28.png?auto=format&amp;dpr=1&amp;w=1000" />
                                     </th>
-                                    <td>{ Number(wolfGameLandCzeroLevelThreePriceQuery.data.price)/1000000000000000000 + " ETH" }</td>
+                                    <td>{ 
+                                            Number(wolfGameLandCzeroLevelThreePriceQuery.data.price) === 0 
+                                            ? 'Unlisted' : 
+                                            Number(wolfGameLandCzeroLevelThreePriceQuery.data.price)/1000000000000000000 + " ETH" 
+                                        }
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
