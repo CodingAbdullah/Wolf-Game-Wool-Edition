@@ -53,7 +53,8 @@ const LandPricePage: FC = () => {
             wolfGameLandCzeroLevelThreePriceQuery.isSuccess) {
                 return (
                     <div className='farmer-price-page'>
-                        <FloorPriceLabel heading={["Wolf Game Genesis Land Prices", "Land "]} price={[wolfGameLandPriceQuery.data.price]} />
+                        <FloorPriceLabel heading={["Wolf Game Genesis Land Prices", "Land ", "https://opensea.io/collection/wolf-game-land"]} 
+                            price={[wolfGameLandPriceQuery.data.price]} />
                         <table style={{ marginLeft: 'auto', marginRight: 'auto', width: '50%' }} className="table table-bordered table-hover">
                             <thead>
                                 <tr>

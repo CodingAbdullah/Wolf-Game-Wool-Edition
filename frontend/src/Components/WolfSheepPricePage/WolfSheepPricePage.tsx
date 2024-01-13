@@ -81,7 +81,8 @@ const WolfSheepPricePage: FC = () => {
         wolfGameWolfA8PriceQuery.isSuccess) {
                 return (
                     <div className='farmer-price-page'>
-                        <FloorPriceLabel heading={["Wolf Game Sheep & Wolf Prices", "Sheep/Wolf "]} price={[wolfGameSheepPriceQuery.data.price]} />
+                        <FloorPriceLabel heading={["Wolf Game Sheep & Wolf Prices", "Sheep/Wolf ", "https://opensea.io/collection/wolf-game"]} 
+                            price={[wolfGameSheepPriceQuery.data.price]} />
                         <table style={{ marginLeft: 'auto', marginRight: 'auto', width: '50%' }} className="table table-bordered table-hover">
                             <thead>
                                 <tr>

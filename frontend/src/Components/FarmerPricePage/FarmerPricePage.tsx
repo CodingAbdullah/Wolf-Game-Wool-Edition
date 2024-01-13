@@ -72,7 +72,8 @@ const FarmerPricePage: FC = () => {
             farmerHundoPriceQuery.isSuccess && farmerTheKidPriceQuery.isSuccess) {
                 return (
                     <div className='farmer-price-page'>
-                        <FloorPriceLabel heading={["Wolf Game Farmer Prices", "Farmer "]} price={[farmerAverageJoePriceQuery.data.price]} />
+                        <FloorPriceLabel heading={["Wolf Game Farmer Prices", "Farmer ", "https://opensea.io/collection/wolf-game-farmer"]} 
+                            price={[farmerAverageJoePriceQuery.data.price]} />
                         <table style={{ marginLeft: 'auto', marginRight: 'auto', width: '50%' }} className="table table-bordered table-hover">
                             <thead>
                                 <tr>
