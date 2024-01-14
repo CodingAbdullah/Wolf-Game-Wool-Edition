@@ -1,5 +1,5 @@
 # Wolf Game Wool Edition
-A side project built on top of the <a href="https://wolf.game">Wolf Game NFT project<a>.  Modular APIs from various resources curated into one place looking up Wolf Game NFT asset prices
+A side project built on top of the <a href="https://wolf.game">Wolf Game NFT project</a>.  Modular APIs from various resources curated into one place looking up Wolf Game NFT asset prices
 
 The following is the official link to the API docs:
 <ul>
@@ -41,7 +41,7 @@ SimpleHash works with collection IDs which are found using the following API:
 One needs to make use of these collection IDs to fetch pricing data related to the NFT collections above.
 For the sake of simplicity, the four collection IDs are posted below and can be added to the <code><b>.env</b></code> file:
 
-- <b><i><u>Collection IDs</i></u></b>
+- <b><i><u>Collection IDs</u></i></b>
 - - Wolf Game Farmer - <code><b>54bbc779847b0d07c8dedc559a9227f4</b></code>
 - - Wolf Game Genesis Land - <code><b>b1299923196b89e89e4c89f88988aca9</b></code>
 - - Wolf Game Sheep/Wolves - <code><b>493238f79224b0e3cc220270978bf8dc</b></code>
@@ -111,4 +111,4 @@ Please note that this project is not affiliated with Wolf Game in anyway, but ra
 
 Open source code for whoever wants or needs it. These APIs are publicly sourced and can be used by anyone.
 
-<i><u>Built by CodingAbdullah</i></u>
+<i><u>Built by CodingAbdullah</u></i>
