@@ -28,10 +28,10 @@ SimpleHash provides APIs for looking up NFT collection prices by trait. This is 
 APIs have been built in the development environment which will be published later in production upon consultation.
 
 The following NFT collections pertain to Wolf Game:
-- <a target="_blank" href="https://opensea.io/wolf-game">Wolf Game Collection</a>
+- <a target="_blank" href="https://opensea.io/collection/wolf-game">Wolf Game Collection</a>
 - <a target="_blank" href="https://opensea.io/collection/wolf-game-generation-2">Wolf Game Generation 2</a>
-- <a target="_blank" href="https://opensea.io/wolf-game-farmer">Wolf Game Farmer</a>
-- <a target="_blank" href="https://opensea.io/wolf-game-land">Wolf Game Genesis Land</a>
+- <a target="_blank" href="https://opensea.io/collection/wolf-game-farmer">Wolf Game Farmer</a>
+- <a target="_blank" href="https://opensea.io/collection/wolf-game-land">Wolf Game Genesis Land</a>
 
 #### Collections by Contract API
 SimpleHash works with collection IDs which are found using the following API: 
