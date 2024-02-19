@@ -6,6 +6,8 @@ The following is the official link to the API docs:
     <li><a target="_blank" href="https://codingabdullah.github.io/Wolf-Game-Wool-Edition/"> https://codingabdullah.github.io/Wolf-Game-Wool-Edition</a></li>
 </ul>
 
+More resources will be added to this project.
+
 ## Project Setup
 The project is a full-stack application using React.js for the front-end and Node.js/Express.js for the back-end. TypeScript is used for enforcing type safety and ensuring best security practices.
 
